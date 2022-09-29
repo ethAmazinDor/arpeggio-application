@@ -26,6 +26,7 @@
     "nodemon": "^2.0.20",
     "passport": "^0.6.0",
     "passport-azure-ad": "^4.3.4",
+    "passport-local": "^1.0.0",
     "validator": "^13.7.0"
   }
 }
