@@ -1,0 +1,44 @@
+<%- include('partials/head') -%>
+
+<div class="container">
+    <h3>Write Your Critique</h3>
+    <div class="row">
+        <form action="/posts/createPost" method="POST" class="col s12">
+            <div class="row">
+                <div class="input-field">
+                    <input type="text" id="title" name="title">
+                    <label for="title">Title</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field">
+                    <select name="status" id="status">
+                        <option value="public" selected>Public</option>
+                        <option value="private">Private</option>
+                    </select>
+                    <label for="status">Status</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field">
+                    <h5>Describe in detail your review of this album/song...</h5>
+                    <textarea name="body" id="body" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <button type="submit" class="btn">Save</button>
+                <a href="/dashboard" class="btn orange">Cancel</a>
+            </div>
+
+
+
+        </form>
+    </div>
+
+</div>
+
+
+<%- include('partials/end') -%>
