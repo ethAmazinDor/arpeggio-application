@@ -20,7 +20,7 @@ app.use(logger('dev'))
 require('dotenv').config({ path: './config/.env' })
 
 
-require('./config/passport')
+require('./config/passport')(passport)
 
 
 //connect to database
@@ -52,7 +52,7 @@ app.use(passport.session())
 
 //setup ROutes 
 app.use('/', mainRoutes)
-
+app.use('/posts', postRoutes)
 
 
 
